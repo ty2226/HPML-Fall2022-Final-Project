@@ -31,7 +31,8 @@ After installing the codebase for two models, please read readme.md in two folde
 sbatch {Architecture folder}/train_with_{GPU type}.sh
 ```
 In our experiments, Architecture folder should be DAFormer or HRDA  
-GPU type should be v100, a100 or rtx8000
+GPU type should be v100, a100 or rtx8000  
+You can find total time and dataload time in log file
 ## Evaluate(in HPC enviroment)
 ```shell
 sbatch {Architecture folder}/test_with_{GPU type}.sh
