@@ -23,5 +23,16 @@ Please follow the GitHub instructions to install the codebase for DAFormer and H
 
 1. DAFormer - https://github.com/lhoyer/DAFormer
 2. HRDA - https://github.com/lhoyer/HRDA
+After installing the codebase for two models, please read readme.md in two folders and overlay the modify_test.py to {architecture folder}/mmseg/apis/test.py
 
-
+## Train(in HPC enviroment)
+```shell
+sbatch {Architecture folder}/train_with_{GPU type}.sh
+```
+In our experiments, Architecture folder should be DAFormer or HRDA and 
+GPU type should be v100, a100 or rtx8000
+## Evaluate(in HPC enviroment)
+```shell
+sbatch {Architecture folder}/test_with_{GPU type}.sh
+```
+Please run Evaluate code after running train code and makesure you have work_dirs folder in each architecture folder.
