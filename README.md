@@ -15,8 +15,8 @@ For this project, we used python 3.8.5. We recommend setting up a new virtual
 environment:
 
 ```shell
-python -m venv ~/venv/daformer
-source ~/venv/daformer/bin/activate
+python -m venv ~/venv/hpml
+source ~/venv/hpml/bin/activate
 ```
 
 Please follow the GitHub instructions to install the codebase for DAFormer and HRDA from the links listed below - 
